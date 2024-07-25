@@ -1,0 +1,38 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           naloge
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/Natan-P/naloge#readme
+author:         Natan
+maintainer:     npolenec@gmail.com
+copyright:      2024 Natan
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+executable naloge
+  main-is: Main.hs
+  other-modules:
+      Naloge.Naloga0
+      Naloge.Naloga1
+      Naloge.Naloga2
+      Naloge.Naloga3
+      Naloge.Naloga4
+      Naloge.Naloga5
+      Paths_naloge
+  autogen-modules:
+      Paths_naloge
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010

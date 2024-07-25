@@ -1,0 +1,32 @@
+name:                naloge
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/Natan-P/naloge#readme
+license:             BSD-3-Clause
+author:              Natan
+maintainer:          npolenec@gmail.com
+copyright:           2024 Natan
+category:            Web
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+dependencies:
+  - base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+executables:
+  naloge:
+    source-dirs:      src
+    main:             Main.hs
