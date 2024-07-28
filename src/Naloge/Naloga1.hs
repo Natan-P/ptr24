@@ -11,8 +11,8 @@ data Zgodovina = Zgodovina { prv :: Rastje
                            , pojed :: Int
                            }
 
-simple :: Num n => String -> n
-simple cont = fromIntegral . st . head . dropWhile (\z -> pojed z < sita) . scanl' fun (Zgodovina Z Z Z 0 0) $ lineToRast $ lns !! 2
+simple :: String -> String
+simple cont = show . st . head . dropWhile (\z -> pojed z < sita) . scanl' fun (Zgodovina Z Z Z 0 0) $ lineToRast $ lns !! 2
     where
         fun :: Zgodovina -> Rastje -> Zgodovina
         fun (Zgodovina _ d t i p) Z = Zgodovina d t Z (i+1) p    

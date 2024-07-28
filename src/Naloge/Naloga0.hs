@@ -21,5 +21,5 @@ matPow m p
     | even p    = matPow (matPow m 2) (p `div` 2)
     | otherwise = matMul m $ matPow (matPow m 2) ((p-1) `div` 2)
 
-simple :: String -> Int
-simple = m11 . matPow (Matrix2x2 1 1 1 0) . read
+simple :: String -> String
+simple = show . m11 . matPow (Matrix2x2 1 1 1 0) . read
